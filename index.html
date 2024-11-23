@@ -11,7 +11,7 @@
 
 </head>
 <body>
-<header class="sticky top-0 bg-green">
+<header class="sticky top-0 bg-green z-10">
     <div class="flex items-center p-3 pl-6">
         <img src="./assets/img/logo.png" alt="Logo" class="h-14 w-14">
         <nav class="ml-8">
@@ -31,42 +31,47 @@
         <article>
             <header class="relative">
                 <img  src="assets/img/mtfuji.jpg" alt="main image" class="w-full object-cover"/>
-                <div class="absolute top-0 left-0 m-20">
-                    <h1 class="text-5xl font-bold text-white">Miko Site</h1>
+                <div class="absolute top-0 left-0 md:m-20 m-8">
+                    <h1 class="md:text-5xl text-3xl font-bold text-white">Miko Site</h1>
                 </div>
-                <div class="absolute bottom-0 right-0 m-10 text-lg text-right text-white justify-end">
+                <div class="absolute bottom-0 right-0 md:m-10 m-4 md:text-lg text-sm text-right text-white justify-end">
                     <p>Certificate IV in IT (Programming)</p>
                     <p>Web Technologies Project as implemented by Michiko</p>
                 </div>
 
             </header>
-            <div class="py-8 px-0 flex flex-wrap justify-center space-x-2">
-                <section class="flex items-center rounded-lg p-4 border-2 border-purple shadow-lg w-full sm:w-1/2 lg:w-1/6">
+            <div class="py-8 flex flex-wrap justify-center">
+                <section class="flex items-center rounded-lg p-4 m-2
+                border-2 border-purple shadow-lg w-full sm:w-1/2 lg:w-1/6">
                     <a href="contact.html" class="flex items-center space-x-4">
                         <img src="assets/img/contact.png" alt="contact">
                         <h4 class="text-lg">Contact</h4>
                     </a>
                 </section>
-                <section class="flex items-center rounded-lg p-4 border-2 border-purple shadow-lg w-full sm:w-1/2 lg:w-1/6">
+                <section class="flex items-center rounded-lg p-4 m-2
+                border-2 border-purple shadow-lg w-full sm:w-1/2 lg:w-1/6">
                     <a href="about.html" class="flex items-center space-x-4">
                         <img src="assets/img/about.png" alt="about">
                         <h4 class="text-lg">About</h4>
                     </a>
                 </section>
-                <section class="flex items-center rounded-lg p-4 border-2 border-purple shadow-lg w-full sm:w-1/2 lg:w-1/6">
+                <section class="flex items-center rounded-lg p-4 m-2
+                border-2 border-purple shadow-lg w-full sm:w-1/2 lg:w-1/6">
                     <a href="resume.html" class="flex items-center space-x-4">
                         <img src="assets/img/resume.png" alt="resume">
                         <h4 class="text-lg">Resume</h4>
                     </a>
                 </section>
-                <section class="flex items-center rounded-lg p-4 border-2 border-purple shadow-lg w-full sm:w-1/2 lg:w-1/6">
+                <section class="flex items-center rounded-lg p-4 m-2
+                border-2 border-purple shadow-lg w-full sm:w-1/2 lg:w-1/6">
                     <a href="projects.html" class="flex items-center space-x-4">
                         <img src="assets/img/project.png" alt="project">
                         <h4 class="text-lg">Project</h4>
                     </a>
                 </section>
-                <section class="flex items-center rounded-lg p-4 border-2 border-purple shadow-lg w-full sm:w-1/2 lg:w-1/6">
-                    <a href="mywork.html" class="flex items-center space-x-6">
+                <section class="flex items-center rounded-lg p-4 m-2
+                border-2 border-purple shadow-lg w-full sm:w-1/2 lg:w-1/6">
+                    <a href="mywork.html" class="flex items-center space-x-4">
                         <img src="assets/img/work.png" alt="work">
                         <h4 class="text-lg">My Work</h4>
                     </a>
@@ -75,12 +80,13 @@
         </article>
     </main>
 </section>
-<footer class="bg-red flex flex-wrap justify-between">
+<footer class="bg-red flex flex-wrap p-2 justify-center">
     <section class="flex items-center p-4">
         <img src="./assets/img/logo.png" alt="Logo" class="h-8 w-8">
         <p class="text-white text-sm mx-6">© Copyright 2023 Adrian Gould and Michiko Goto. All rights reserved.</p>
     </section>
-    <ul class="flex items-center text-sm space-x-6 mr-20">
+
+    <ul class="flex items-center text-sm space-x-6">
         <li><a href="/" class="underline text-black hover:text-purple hover:underline">Home</a></li>
         <li><a href="contact.html" class="underline text-black hover:text-purple hover:underline">Contact</a></li>
         <li><a href="about.html" class="underline text-black hover:text-purple hover:underline">About</a></li>
