@@ -1,10 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MICHIKO | Web Tech | Cert 4 Prog</title>
 
+    <link rel="stylesheet" href="./assets/css/site.css">
+    <link rel="stylesheet" href="./assets/css/additional.css">
+
+</head>
+<body class="min-h-screen flex flex-col">
+<header class="sticky top-0 bg-green z-10">
+    <div class="flex items-center p-3 pl-6">
+        <img src="./assets/img/logo.png" alt="Logo" class="h-14 w-14">
+        <nav class="ml-8">
+            <ul class="flex flex-wrap space-x-4">
+                <li><a href="/" class="underline text-black hover:text-purple hover:underline">Home</a></li>
+                <li><a href="contact.html" class="underline text-black hover:text-purple hover:underline">Contact</a></li>
+                <li><a href="about.html" class="underline text-black hover:text-purple hover:underline">About</a></li>
+                <li><a href="resume.html" class="underline text-black hover:text-purple hover:underline">Resume</a></li>
+                <li><a href="projects.html" class="underline text-black hover:text-purple hover:underline">Project</a></li>
+                <li><a href="mywork.html" class="underline text-black hover:text-purple hover:underline">My work</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="md:bg-pink flex flex-col flex-1">
+    <main class="max-w-screen-lg w-full mx-auto md:bg-white bg-pink bg-opacity-40 flex-1">
+        <article>
+            <header>
+                <h2 class="md:text-4xl text-3xl font-bold p-4 text-center items-center">Resume</h2>
+            </header>
+            <div class="flex flex-wrap justify-center">
+                <section class="md:mt-10 m-2 py-4 px-8 md:w-1/3 w-full flex flex-col border-2 border-purple bg-white rounded-lg">
+                    <h3 class="text-xl my-2 font-bold underline">Skills</h3>
+                    <ul>
+                        <li>- Japanese, English</li>
+                        <li>- HTML</li>
+                        <li>- JavaScript</li>
+                        <li>- CSS, Tailwind CSS</li>
+                        <li>- Git, GitHub</li>
+                        <li>- Figma</li>
+                    </ul>
+                </section>
+                <section class="md:mt-10 m-2 py-4 px-8 md:w-1/2 w-full flex flex-col border-2 border-purple bg-white rounded-lg">
+                    <h3 class="text-xl my-2 font-bold underline">Education</h3>
+                    <p>- Bachelor of Pharmacy</p>
+                    <p>Kobe Pharmaceutical University, Japan</p>
+                    <p>- Certificate IV in Information Technology (Programming)</p>
+                    <p>North Metropolitan TAFE</p>
+                </section>
+            </div>
+        </article>
+    </main>
+</section>
+<footer class="bg-red flex flex-wrap p-2 justify-center">
+    <section class="flex items-center p-4">
+        <img src="./assets/img/logo.png" alt="Logo" class="h-8 w-8">
+        <p class="text-white text-sm mx-6">© Copyright 2023 Adrian Gould and Michiko Goto. All rights reserved.</p>
+    </section>
+
+    <ul class="flex items-center text-sm space-x-6">
+        <li><a href="/" class="underline text-black hover:text-purple hover:underline">Home</a></li>
+        <li><a href="contact.html" class="underline text-black hover:text-purple hover:underline">Contact</a></li>
+        <li><a href="about.html" class="underline text-black hover:text-purple hover:underline">About</a></li>
+    </ul>
+</footer>
 </body>
 </html>
