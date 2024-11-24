@@ -1,10 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MICHIKO | Web Tech | Cert 4 Prog</title>
 
+    <link rel="stylesheet" href="./assets/css/site.css">
+    <link rel="stylesheet" href="./assets/css/additional.css">
+
+</head>
+<body class="min-h-screen flex flex-col">
+<header class="sticky top-0 bg-green z-10">
+    <div class="flex items-center p-3 pl-6">
+        <img src="./assets/img/logo.png" alt="Logo" class="h-14 w-14">
+        <nav class="ml-8">
+            <ul class="flex flex-wrap space-x-4">
+                <li><a href="/" class="underline text-black hover:text-purple hover:underline">Home</a></li>
+                <li><a href="contact.html" class="underline text-black hover:text-purple hover:underline">Contact</a></li>
+                <li><a href="about.html" class="underline text-black hover:text-purple hover:underline">About</a></li>
+                <li><a href="resume.html" class="underline text-black hover:text-purple hover:underline">Resume</a></li>
+                <li><a href="projects.html" class="underline text-black hover:text-purple hover:underline">Project</a></li>
+                <li><a href="mywork.html" class="underline text-black hover:text-purple hover:underline">My work</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="md:bg-pink flex flex-col flex-1">
+    <main class="max-w-screen-lg mx-auto md:bg-white bg-pink bg-opacity-40 flex-1">
+        <article>
+            <header>
+                <h2 class="md:text-4xl text-3xl font-bold p-4 text-center items-center">About</h2>
+            </header>
+            <div class="md:mx-20 md:p-8 flex flex-col justify-center items-center">
+                <img src="assets/img/mtfuji.jpg" alt="profile" class="md:h-64 md:w-64 h-32 w-32 rounded-full">
+            </div>
+            <div class="md:mx-20 md:px-8">
+                <section class="mx-10 m-4 p-8 border-4 rounded-xl md:text-lg md:bg-purple md:bg-opacity-20 border-purple bg-white">
+                    <section class="md:mx-10 text-center md:p-4">
+                        <p class="text-justify">This project aims to create a portfolio website to showcase my coding projects. The goal is to build a responsive and user-friendly website that highlights my development skills and projects.</p>
+                        <p class="text-justify">I used HTML, CSS, JavaScript, and Tailwind CSS to build this website.</p>
+                    </section>
+                    <section class="m-4 pt-4 flex items-center justify-center space-x-4">
+                        <img src="assets/img/about.png" alt="about" class="w-6 h-6">
+                        <p>Michiko Goto</p>
+                    </section>
+                    <section class="md:m-4 mx-0 flex items-center justify-center space-x-4">
+                        <img src="assets/img/school.png" alt="school" class="w-6 h-6">
+                        <p>North Metropolitan TAFE</p>
+                    </section>
+                    <section class="m-4 flex items-center justify-center space-x-4">
+                        <img src="assets/img/location.png" alt="location" class="w-6 h-6">
+                        <p>30 Aberdeen St, Perth WA 6000, Australia</p>
+                    </section>
+                </section>
+            </div>
+        </article>
+    </main>
+</section>
+<footer class="bg-red flex flex-wrap p-2 justify-center">
+    <section class="flex items-center p-4">
+        <img src="./assets/img/logo.png" alt="Logo" class="h-8 w-8">
+        <p class="text-white text-sm mx-6">© Copyright 2023 Adrian Gould and Michiko Goto. All rights reserved.</p>
+    </section>
+
+    <ul class="flex items-center text-sm space-x-6">
+        <li><a href="/" class="underline text-black hover:text-purple hover:underline">Home</a></li>
+        <li><a href="contact.html" class="underline text-black hover:text-purple hover:underline">Contact</a></li>
+        <li><a href="about.html" class="underline text-black hover:text-purple hover:underline">About</a></li>
+    </ul>
+</footer>
 </body>
 </html>
