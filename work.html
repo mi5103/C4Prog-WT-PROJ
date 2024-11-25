@@ -27,37 +27,51 @@
         </nav>
     </div>
 </header>
-<main class="bg-purple bg-opacity-50 flex flex-col flex-1">
+<main class="bg-green bg-opacity-30 flex flex-col flex-1">
     <div class="md:flex md:flex-row md:space-x-8 flex-1">
-        <div class="flex justify-center items-center md:w-2/3">
-            <img src="assets/img/profile.jpg" alt="about profile" class="hidden md:block">
+        <div class="flex justify-center items-center md:w-1/2">
+            <img src="assets/img/momiji.jpg" alt="momiji" class="hidden md:block">
         </div>
-        <div class="flex flex-col md:justify-center md:px-4 px-6 md:pb-0">
-            <header>
-                <h2 class="md:text-4xl text-3xl font-bold p-4 text-center items-center">About</h2>
-            </header>
-            <section class="md:w-2/3 md:mx-auto md:text-lg text-center md:p-8 p-4">
-                <p class="text-justify">I am currently participating in a web development course as an international student.
-                    This is my first experience with programming, and I am learning basic skills such as HTML, CSS, Tailwind CSS and JavaScript.</p>
-                <p class="text-justify">I am passionate about developing user-friendly websites and am excited to apply the skills I’ve learned to real-world projects.</p>
-            </section>
-            <div class="md:text-md md:mt-20 mt-10 border-4 rounded-xl border-purple bg-purple bg-opacity-50 md:p-2 p-4 md:w-1/2 mx-0 md:mx-auto">
-                <section class="md:m-4 flex items-center justify-center space-x-4">
-                    <img src="assets/img/about.png" alt="about" class="w-6 h-6">
-                    <p>Michiko Goto</p>
-                </section>
-                <section class="md:m-4 mx-0 flex items-center justify-center space-x-4">
-                    <img src="assets/img/school.png" alt="school" class="w-6 h-6">
-                    <p>North Metropolitan TAFE</p>
-                </section>
-                <section class="md:m-4 flex items-center justify-center space-x-4">
-                    <img src="assets/img/location.png" alt="location" class="w-6 h-6">
-                    <p>30 Aberdeen St, Perth WA 6000, Australia</p>
-                </section>
-            </div>
-        </div>
+
+        <section class="flex flex-col items-center justify-start flex-1 px-10">
+            <h3 class="mt-20 text-2xl font-bold">Currency Conversion</h3>
+            <form class="currency">
+                <label for="fromCurrency">From:</label>
+                <select id="fromCurrency">
+                    <option value="AUD">AUD - Australian Dollar</option>
+                    <option value="CNY">CNY - Chinese Yuan</option>
+                    <option value="GBP">GBP - British Pound</option>
+                    <option value="NZD">NZD - New Zealand Dollar</option>
+                    <option value="KRW">KRW - South Korean Won</option>
+                    <option value="HKD">HKD - Hong Kong Dollar</option>
+                    <option value="CHF">CHF - Swiss Franc</option>
+                    <option value="PLN">PLN - Polish Zloty</option>
+                    <option value="TRY">TRY - Turkish New Lira</option>
+                    <option value="DKK">AUD - Danish Krone</option>
+                </select>
+                <input type="number" id="amount" placeholder="Enter amount" required>
+
+                <label for="toCurrency">To:</label>
+                <select id="toCurrency">
+                    <option value="AUD">AUD - Australian Dollar</option>
+                    <option value="CNY">CNY - Chinese Yuan</option>
+                    <option value="GBP">GBP - British Pound</option>
+                    <option value="NZD">NZD - New Zealand Dollar</option>
+                    <option value="KRW">KRW - South Korean Won</option>
+                    <option value="HKD">HKD - Hong Kong Dollar</option>
+                    <option value="CHF">CHF - Swiss Franc</option>
+                    <option value="PLN">PLN - Polish Zloty</option>
+                    <option value="TRY">TRY - Turkish New Lira</option>
+                    <option value="DKK">AUD - Danish Krone</option>
+                </select>
+
+                <p id="newAmount"></p>
+                <button onclick="convertCurrency()">Convert</button>
+            </form>
+        </section>
     </div>
 </main>
+
 <footer class="bg-red flex flex-wrap p-2 justify-center">
     <section class="flex items-center p-4">
         <img src="./assets/img/logo.png" alt="Logo" class="h-8 w-8">

@@ -50,6 +50,56 @@
     background-color: #e5c5d4;
 }
 
+.currency {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    max-width: 100%;
+    width: 100%;
+    margin: 2rem;
+}
+
+.currency label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.currency select,
+.currency input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid #738a5c;
+    border-radius: 0.5rem;
+}
+.currency button{
+    padding: 0.5rem;
+    margin: 2rem;
+    color: white;
+    background-color: #738a5c;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.currency button {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 水平方向、垂直方向、ぼかし、色 */
+}
+.currency button:focus {
+    border: 2px solid white;
+}
+#newAmount{
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    border: 2px solid #900820;
+    border-radius: 0.5rem;
+}
+
+
 /* desktop layout */
 @media (min-width: 768px) {
     .contact-form {
@@ -68,6 +118,11 @@
 
     .contact-form button {
         font-size: 1.2rem;
+    }
+
+    .currency{
+        max-width: 50%;
+        width: 100%;
     }
 }
 

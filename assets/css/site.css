@@ -1009,6 +1009,10 @@ video {
   background-color: rgb(229 197 212 / var(--tw-bg-opacity, 1));
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -1221,6 +1225,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .hover\:text-purple:hover {
   --tw-text-opacity: 1;
   color: rgb(221 214 254 / var(--tw-text-opacity, 1));
@@ -1370,6 +1380,11 @@ video {
     background-color: rgb(144 8 32 / var(--tw-bg-opacity, 1));
   }
 
+  .md\:bg-black {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+  }
+
   .md\:bg-opacity-20 {
     --tw-bg-opacity: 0.2;
   }
@@ -1380,6 +1395,14 @@ video {
 
   .md\:bg-opacity-50 {
     --tw-bg-opacity: 0.5;
+  }
+
+  .md\:bg-opacity-5 {
+    --tw-bg-opacity: 0.05;
+  }
+
+  .md\:bg-opacity-10 {
+    --tw-bg-opacity: 0.1;
   }
 
   .md\:p-8 {
@@ -1421,6 +1444,16 @@ video {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

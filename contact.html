@@ -12,17 +12,17 @@
 
 </head>
 <body class="min-h-screen flex flex-col">
-<header class="sticky top-0 bg-green z-10">
+<header class="sticky top-0 bg-green shadow-xl z-10">
     <div class="flex items-center p-3 pl-6">
         <img src="./assets/img/logo.png" alt="Logo" class="h-14 w-14">
         <nav class="ml-8">
             <ul class="flex flex-wrap space-x-4">
-                <li><a href="index.html" class="underline text-black hover:text-purple hover:underline">Home</a></li>
-                <li><a href="contact.html" class="underline text-black hover:text-purple hover:underline">Contact</a></li>
-                <li><a href="about.html" class="underline text-black hover:text-purple hover:underline">About</a></li>
-                <li><a href="resume.html" class="underline text-black hover:text-purple hover:underline">Resume</a></li>
-                <li><a href="projects.html" class="underline text-black hover:text-purple hover:underline">Project</a></li>
-                <li><a href="mywork.html" class="underline text-black hover:text-purple hover:underline">My work</a></li>
+                <li><a href="index.html" class="underline shadow-lg text-black hover:text-purple hover:underline">Home</a></li>
+                <li><a href="contact.html" class="underline shadow-lg text-black hover:text-purple hover:underline">Contact</a></li>
+                <li><a href="about.html" class="underline shadow-lg text-black hover:text-purple hover:underline">About</a></li>
+                <li><a href="resume.html" class="underline shadow-lg text-black hover:text-purple hover:underline">Resume</a></li>
+                <li><a href="projects.html" class="underline shadow-lg text-black hover:text-purple hover:underline">Project</a></li>
+                <li><a href="mywork.html" class="underline shadow-lg text-black hover:text-purple hover:underline">My work</a></li>
             </ul>
         </nav>
     </div>
@@ -36,7 +36,7 @@
             <div class="md:mx-20 md:p-8">
                 <section class="mx-10 px-2 py-4 bg-white border-2 border-purple rounded-lg">
                     <p class="md:text-lg text-center">If you have any questions, feel free to reach out using the form below.</p>
-                    <form action="/submit_form" method="POST" class="contact-form">
+                    <form action="/submit_form" method="POST" id="contact" class="contact-form">
                         <label for="name">Your Name:</label>
                         <input type="text" id="name" name="name" required>
 
@@ -56,13 +56,13 @@
 <footer class="bg-red flex flex-wrap p-2 justify-center">
     <section class="flex items-center p-4">
         <img src="./assets/img/logo.png" alt="Logo" class="h-8 w-8">
-        <p class="text-white text-sm mx-6">© Copyright 2023 Adrian Gould and Michiko Goto. All rights reserved.</p>
+        <p class="text-white text-sm mx-6">© Copyright 2024 Michiko Goto.</p>
     </section>
 
     <ul class="flex items-center text-sm space-x-6">
-        <li><a href="index.html" class="underline text-black hover:text-purple hover:underline">Home</a></li>
-        <li><a href="contact.html" class="underline text-black hover:text-purple hover:underline">Contact</a></li>
-        <li><a href="about.html" class="underline text-black hover:text-purple hover:underline">About</a></li>
+        <li><a href="index.html" class="underline shadow-lg text-black hover:text-purple hover:underline">Home</a></li>
+        <li><a href="contact.html" class="underline shadow-lg text-black hover:text-purple hover:underline">Contact</a></li>
+        <li><a href="about.html" class="underline shadow-lg text-black hover:text-purple hover:underline">About</a></li>
     </ul>
 </footer>
 </body>
