@@ -34,40 +34,25 @@
         </div>
 
         <section class="flex flex-col items-center justify-start flex-1 px-10">
-            <h3 class="mt-20 text-2xl font-bold">Currency Conversion</h3>
-            <form class="currency">
-                <label for="fromCurrency">From:</label>
-                <select id="fromCurrency">
-                    <option value="AUD">AUD - Australian Dollar</option>
-                    <option value="CNY">CNY - Chinese Yuan</option>
-                    <option value="GBP">GBP - British Pound</option>
-                    <option value="NZD">NZD - New Zealand Dollar</option>
-                    <option value="KRW">KRW - South Korean Won</option>
-                    <option value="HKD">HKD - Hong Kong Dollar</option>
-                    <option value="CHF">CHF - Swiss Franc</option>
-                    <option value="PLN">PLN - Polish Zloty</option>
-                    <option value="TRY">TRY - Turkish New Lira</option>
-                    <option value="DKK">AUD - Danish Krone</option>
-                </select>
-                <input type="number" id="amount" placeholder="Enter amount" required>
-
-                <label for="toCurrency">To:</label>
-                <select id="toCurrency">
-                    <option value="AUD">AUD - Australian Dollar</option>
-                    <option value="CNY">CNY - Chinese Yuan</option>
-                    <option value="GBP">GBP - British Pound</option>
-                    <option value="NZD">NZD - New Zealand Dollar</option>
-                    <option value="KRW">KRW - South Korean Won</option>
-                    <option value="HKD">HKD - Hong Kong Dollar</option>
-                    <option value="CHF">CHF - Swiss Franc</option>
-                    <option value="PLN">PLN - Polish Zloty</option>
-                    <option value="TRY">TRY - Turkish New Lira</option>
-                    <option value="DKK">AUD - Danish Krone</option>
-                </select>
-
-                <p id="newAmount"></p>
-                <button onclick="convertCurrency()">Convert</button>
+            <h3 class="mt-20 text-2xl font-bold">Riddles / Trivia</h3>
+            <form id="api" class="api">
+                <div class="api-selection">
+                    <h4 class="m-2">- Pick from the following APIs -</h4>
+                    <div class="checkbox-group text-lg font-bold space-x-4">
+                        <label><input type="checkbox" name="api" id="riddles" value="riddles">Riddles</label>
+                        <label><input type="checkbox" name="api" id="trivia" value="trivia">Trivia</label>
+                    </div>
+                    <label for="filter" class="p-4">Enter the number of riddles you want or a category for trivia!</label>
+                    <input type="text" id="filter" name="filter">
+                </div>
+                <div class="button-group space-x-4">
+                    <button type="submit" id="submit">Get Response</button>
+                    <button type="reset" id="reset">Reset</button>
+                </div>
             </form>
+            <div id="result" class="result m-4 justify-center">
+                <div id="message"></div>
+            </div>
         </section>
     </div>
 </main>
@@ -84,5 +69,6 @@
         <li><a href="about.html" class="underline shadow-lg text-black hover:text-purple hover:underline">About</a></li>
     </ul>
 </footer>
+<script src="assets/js/additional.js"></script>
 </body>
 </html>

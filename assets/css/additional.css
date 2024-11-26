@@ -50,30 +50,35 @@
     background-color: #e5c5d4;
 }
 
-.currency {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    max-width: 100%;
-    width: 100%;
-    margin: 2rem;
+.apis section{
+    border: none;
+    padding: 10px;
+    text-align: center;
 }
 
-.currency label {
-    font-size: 1rem;
-    font-weight: 600;
+.api-selection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
 }
-.currency select,
-.currency input {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
+
+.checkbox-group, .button-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.api-selection input[type="text"]{
+    padding: 10px;
     border: 2px solid #738a5c;
     border-radius: 0.5rem;
+    width: 80%
 }
-.currency button{
-    padding: 0.5rem;
-    margin: 2rem;
+
+.button-group button{
+    padding: 0.5rem 1rem;
     color: white;
     background-color: #738a5c;
     border: none;
@@ -82,21 +87,19 @@
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
+
 }
-.currency button {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 水平方向、垂直方向、ぼかし、色 */
+.result{
+    width: 80%;
 }
-.currency button:focus {
-    border: 2px solid white;
-}
-#newAmount{
+#message{
+    margin: 10px;
     width: 100%;
-    padding: 1.2rem;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    padding: 1rem;
     background-color: white;
     border: 2px solid #900820;
     border-radius: 0.5rem;
+    text-align: center;
 }
 
 
@@ -123,6 +126,20 @@
     .currency{
         max-width: 50%;
         width: 100%;
+    }
+
+    .api-selection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        font-size: 1.1rem;
+    }
+    .result{
+        width: 60%
+    }
+    .button-group button{
+        margin-top: 2rem;
     }
 }
 
