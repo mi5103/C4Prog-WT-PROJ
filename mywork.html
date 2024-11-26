@@ -27,29 +27,36 @@
         </nav>
     </div>
 </header>
-<section class="md:bg-green md:bg-opacity-30 bg-pink bg-opacity-40 flex flex-col flex-1">
-    <main class="max-w-screen-lg w-full mx-auto flex-1">
-        <article>
-            <header>
-                <h2 class="md:text-4xl text-3xl font-bold p-4 text-center items-center">My Work</h2>
-            </header>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mt-10 gap-4">
-                <div class="bg-white">
-                    <img src="assets/img/portfolio_site.png" alt="portfolio site">
-                    <a href="index.html" target="_blank" class="text-lg font-bold my-2 hover:underline">Portfolio Website</a>
+<main class="bg-green bg-opacity-30 flex flex-col flex-1">
+    <div class="md:flex md:flex-row md:space-x-8 flex-1">
+        <div class="flex justify-center items-center md:w-1/2">
+            <img src="assets/img/momiji.jpg" alt="momiji" class="hidden md:block">
+        </div>
+
+        <section class="flex flex-col items-center justify-start flex-1 px-10">
+            <h3 class="mt-20 text-2xl font-bold">Riddles / Trivia</h3>
+            <form id="api" class="api">
+                <div class="api-selection">
+                    <h4 class="m-2">- Pick from the following APIs -</h4>
+                    <div class="checkbox-group text-lg font-bold space-x-4">
+                        <label><input type="checkbox" name="api" id="riddles" value="riddles">Riddles</label>
+                        <label><input type="checkbox" name="api" id="trivia" value="trivia">Trivia</label>
+                    </div>
+                    <label for="filter" class="p-4">Enter the number of riddles you want or a category for trivia!</label>
+                    <input type="text" id="filter" name="filter">
                 </div>
-                <div class="bg-white">
-                    <img src="assets/img/phase5.png" alt="phase5">
-                    <a href="http://localhost:63342/C4Prog-WT-24S2-Portfolio-MG/index.html" target="_blank" class="text-lg font-bold my-2 hover:underline">Phase-5</a>
+                <div class="button-group space-x-4">
+                    <button type="submit" id="submit">Get Response</button>
+                    <button type="reset" id="reset">Reset</button>
                 </div>
-                <div class="bg-white">
-                    <img src="" alt="">
-                    <a href="#" target="_blank" class="text-lg font-bold my-2 hover:underline">Work</a>
-                </div>
+            </form>
+            <div id="result" class="result m-4 justify-center">
+                <div id="message"></div>
             </div>
-        </article>
-    </main>
-</section>
+        </section>
+    </div>
+</main>
+
 <footer class="bg-red flex flex-wrap p-2 justify-center">
     <section class="flex items-center p-4">
         <img src="./assets/img/logo.png" alt="Logo" class="h-8 w-8">
@@ -62,5 +69,6 @@
         <li><a href="about.html" class="underline shadow-lg text-black hover:text-purple hover:underline">About</a></li>
     </ul>
 </footer>
+<script src="assets/js/api.js"></script>
 </body>
 </html>

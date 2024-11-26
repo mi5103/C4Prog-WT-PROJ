@@ -90,16 +90,18 @@
 
 }
 .result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
 }
-#message{
+.result #message{
     margin: 10px;
     width: 100%;
     padding: 1rem;
     background-color: white;
     border: 2px solid #900820;
     border-radius: 0.5rem;
-    text-align: center;
 }
 
 
